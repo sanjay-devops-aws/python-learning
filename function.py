@@ -1,3 +1,14 @@
+
+# Python function is a block of code, that runs only when it is called. It is programmed to return the specific task. 
+# You can pass values in functions called parameters. It helps in performing repetitive tasks.
+
+# The main types of functions in Python are:
+
+# Built-in function
+# User-defined function
+# Lambda functions
+# Recursive functions
+
 # def calculateGmean(a, b):
 #   mean = (a*b)/(a+b)
 #   print(mean)
@@ -47,25 +58,37 @@
 # Hello Function!
 # Hello Function!
 
-def hello_func():
-    return 'Hello Function!'
+# def hello_func():
+#     return 'Hello Function!'
 
-print(len('Test'))
+# print(len('Test'))
 
-print(hello_func().upper())
+# print(hello_func().upper())
 
-def hello_func(greeting):    # pass argument
-    return '{} Function.'.format(greeting)
+# def hello_func(greeting):    # pass argument
+#     return '{} Function.'.format(greeting)
 
-print(hello_func('Hi'))
+# print(hello_func('Hi'))
 
-def hello_func(greeting, name='You'):    # pass argument
-    return '{}, {}'.format(greeting, name)
+# def hello_func(greeting, name='You'):    # pass argument
+#     return '{}, {}'.format(greeting, name)
 
-print(hello_func('Hi', name= 'Sanjay'))
+# print(hello_func('Hi', name= 'Sanjay'))
 # Output:
 # 4
 # HELLO FUNCTION!
 # Hi Function.
 # Hi, Sanjay
 
+# A simple Python function to check
+# whether x is even or odd
+def evenOdd(x):
+	if (x % 2 == 0):
+		print("even")
+	else:
+		print("odd")
+
+
+# Driver code to call the function
+evenOdd(2)
+evenOdd(3)
