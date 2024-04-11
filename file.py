@@ -4,20 +4,20 @@
 
 #The Basics:
 # f = open("test.txt", "r")
-# f = open("test.txt", "w")
-# f = open("test.txt", "a")
-# f = open("test.txt", "r+")
+# # f = open("test.txt", "w")
+# # f = open("test.txt", "a")
+# # f = open("test.txt", "r+")
 # print(f.name)
-# print(f.mode)
+# # print(f.mode)
 # f.close()
 
 ##Reading Files:
-with open("test.txt", "r") as f:
-	pass
-	# Small Files:
-	f_contents = f.read()
-	print(f_contents)
-f.close()
+# with open("test.txt", "r") as f:
+# 	pass
+# 	# Small Files:
+# 	f_contents = f.read()
+# 	print(f_contents)
+
 	##Big Files:
 	#f_contents = f.readlines()
 	#print(f_contents)
@@ -113,3 +113,20 @@ f.close()
         #while len(rf_chunk) > 0:
             #wf.write(rf_chunk)
             #rf_chunk = rf.read(chunk_size)
+            
+
+###
+# Reading a file
+
+f = open("c:\\Users\\Sanjay\\Documents\\python\\python-learning\\test.txt", 'r')
+#print(f)
+testfiles = f.read()
+print(testfiles)
+f.close()
+
+# writing a file
+
+f = open("c:\\Users\\Sanjay\\Documents\\python\\python-learning\\test2.txt", 'w')
+#print(f)
+f.write('Hello world!')
+f.close()
